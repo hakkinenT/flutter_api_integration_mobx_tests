@@ -1,7 +1,7 @@
 # Flutter Integração com API Json Placeholeder usando Mobx e Testes
 Projeto simples de integração com a API [Json Placeholder](https://jsonplaceholder.typicode.com/). 
 
-Foram feitos testes unitários durante a integração com API, como também testes de widgets, para testar widgets individualmente. Além de testes de integração para testar o funcionamento do APP como um todo. Os testes de integração foram implementados usando o Robot Pattern.
+Durante o desenvolvimento deste projeto foram feitos testes unitários, testes de widgets e testes de integração. Os testes de integração foram implementados usando o Robot Pattern.
 
 ## Status do Projeto
 Em Desenvolvimento
@@ -36,6 +36,7 @@ As seguintes tecnologias foram usadas neste projeto:
 - Testes Unitários
 - Testes de Widgets
 - Testes de Integração
+- Validação de formulário
 
 ## Padrões de projeto
 Os seguintes padrões de projeto foram aplicados:
