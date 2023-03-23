@@ -41,3 +41,36 @@ As seguintes tecnologias foram usadas neste projeto:
 ## Padrões de projeto
 Os seguintes padrões de projeto foram aplicados:
 - Repository
+
+# Passo a passo para executar o projeto
+
+- Clone o repositório:
+
+```shell
+https://github.com/hakkinenT/flutter_api_integration_mobx_tests.git
+```
+- Instale as dependências
+
+```shell
+flutter pub get
+```
+- Rode o projeto
+
+```shell
+flutter run
+```
+## Executar Testes
+1. Para executar todos os testes que estão dentro da pasta teste via terminal, execute o comando:
+
+```shell
+flutter test test/
+```
+*OBS: A pasta **test** contém tanto os testes unitários quanto os testes de widget*
+
+
+2. Para executar os testes de integração via terminal, execute o comando:
+
+```shell
+flutter test integration_test/scenarios/
+```
+3. Execute os testes usando as ferramentas presente na IDE de sua preferência.
