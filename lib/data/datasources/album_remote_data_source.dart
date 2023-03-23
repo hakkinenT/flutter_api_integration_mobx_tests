@@ -22,10 +22,10 @@ class AlbumRemoteDataSourceImpl implements AlbumRemoteDataSource {
 
   @override
   Future<void> create(Album album) async {
-    await _request(operation: () async => await _sendPostRequest(album));
+    await _request(operation: () => _sendPostRequest(album));
   }
 
-  _sendPostRequest(Album album) async {
+  Future<http.Response> _sendPostRequest(Album album) async {
     return await client.post(Uri.parse(_baseUrl),
         body: json.encode(album.toJson()));
   }
