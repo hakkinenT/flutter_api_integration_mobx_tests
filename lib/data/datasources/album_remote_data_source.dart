@@ -22,9 +22,7 @@ class AlbumRemoteDataSourceImpl implements AlbumRemoteDataSource {
 
   @override
   Future<void> create(Album album) async {
-    await _request(operation: () async {
-      return await _sendPostRequest(album);
-    });
+    await _request(operation: () async => await _sendPostRequest(album));
   }
 
   _sendPostRequest(Album album) async {
@@ -67,9 +65,6 @@ class AlbumRemoteDataSourceImpl implements AlbumRemoteDataSource {
       rethrow;
     } on TimeoutException {
       rethrow;
-    } on HttpRequestException {
-      throw HttpRequestException(
-          httpError: mapStatusCodeToMessage(httpResponse.statusCode));
     }
   }
 
